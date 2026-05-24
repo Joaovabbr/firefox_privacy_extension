@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Monitor</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="shield-icon">🛡️</div>
+                <h1>Privacy Monitor</h1>
+            </div>
+            <p class="subtitle" id="current-domain">Carregando...</p>
+        </header>
+
+        <section class="score-section">
+            <div class="score-circle">
+                <svg>
+                    <circle cx="60" cy="60" r="54"></circle>
+                    <circle cx="60" cy="60" r="54" id="score-progress"></circle>
+                </svg>
+                <div class="score-value">
+                    <span id="score-text">100</span>
+                </div>
+            </div>
+            <div class="score-label">Privacy Score</div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🌐</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="third-party-count">0</span>
+                    <span class="stat-name">Domínios 3ª Parte</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🍪</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="cookie-count">0</span>
+                    <span class="stat-name">Cookies</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🗄️</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="storage-count">0</span>
+                    <span class="stat-name">Storage Keys</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🕵️</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="fingerprint-count">0</span>
+                    <span class="stat-name">Fingerprints</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="details-section">
+            <h3>Ameaças Detectadas</h3>
+            <ul id="threat-list" class="threat-list">
+                <li class="safe-state">Nenhuma ameaça detectada ainda.</li>
+            </ul>
+        </section>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
