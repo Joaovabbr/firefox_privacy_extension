@@ -1,6 +1,6 @@
 # Privacy Monitor - Extensão para Firefox
 
-Esta é a extensão de privacidade desenvolvida para o Roteiro 3. Ela tem como objetivo detectar e alertar o usuário sobre diversas técnicas modernas de rastreamento na web.
+Esta é a extensão de privacidade desenvolvida para o Roteiro 4. Ela tem como objetivo detectar e alertar o usuário sobre diversas técnicas modernas de rastreamento na web.
 
 ## Instalação (Ambiente de Desenvolvimento)
 
